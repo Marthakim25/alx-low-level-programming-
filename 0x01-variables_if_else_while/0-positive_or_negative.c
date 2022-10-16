@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stlib.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
@@ -15,15 +15,15 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("Nd is positive\n", n);
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("Nd is zero\n", n);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("Nd is negative\n", n);
+		printf("%d is negative\n", n);
 	}
 
 	return (0);
