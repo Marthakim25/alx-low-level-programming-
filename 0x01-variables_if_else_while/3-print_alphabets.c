@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints alphabeth in lower case
+ * main - prints alphabeth in lower and upper case
  * Return: Always 0
  */
 int main(void)
@@ -9,10 +9,14 @@ int main(void)
 	char tr;
 
 
-	for (tr = "a"; tr <= "a"; tr++)
-	{
+	for (tr = 'a'; tr <= 'z'; tr++)
 		putchar(tr);
-	}
-	putchar("\n");
+
+
+	for (tr = 'A'; tr <= 'Z'; tr++)
+		putchar(tr);
+
+	putchar('\n');
+
 	return (0);
 }
