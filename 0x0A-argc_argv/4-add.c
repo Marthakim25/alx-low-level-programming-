@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main -> program prints its name followed by a new line
@@ -8,21 +9,23 @@
  */
 int main(int argc, char *argv[])
 {
-	int result = 0, num, k, m, l;
-	
-	if (argc == 1)
-		printf("0\n");
+	int result = 0, num, k, m, p;
 
-	for (k = 0; k < argc; k++)
+	for (k = 1; k < argc; k++)
 	{
 		for (m = 0; argv[k][m] != '\0'; m++)
 		{
-			printf("%s\n", "Error");
-			return (1);
+			if (argv[k][m] > '9' || argv[k][m] < '0')
+			{
+				printf("%s\n", "Error");
+				return (1);
+			}
 		}
-	for (l = 0; l < argc; l++)
+	}
+
+	for (p = 1; p < argc; p++)
 	{
-		num = atoi(argc[l]);
+		num = atoi(argv[p]);
 		result += num;
 	}
 	printf("%d\n", result);
