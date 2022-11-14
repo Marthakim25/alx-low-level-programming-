@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the name of the file program complied from followed by a new line
+ * main - prints the name of the file program was complied from
  * Return: Always 0
  */
 int main(void)
