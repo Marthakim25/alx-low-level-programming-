@@ -2,7 +2,7 @@
 
 /**
  * op_add - calculates the sum of a and b
- * @a - the first integer
+ * @a: the first integer
  * @b: the second integer
  *
  * Return: the sum of a and b
@@ -28,7 +28,7 @@ int op_sub(int a, int b)
  * op_mul - calculates the product of two integer
  * @a: the first integer
  * @b: the second integer
- * 
+ *
  * Return: product of a and b
  */
 int op_mul(int a, int b)

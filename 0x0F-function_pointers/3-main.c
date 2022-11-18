@@ -16,18 +16,18 @@ int main(int argc, char *argv[])
 	if (argc != 1)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 
 	arg1 = atoi(argv[1]);
-	arg2 = atoi(argv[1]);
+	arg2 = atoi(argv[3]);
 
 	func = get_op_func(argv[2]);
 
 	if (!func)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	o = *argv[2];
@@ -35,12 +35,12 @@ int main(int argc, char *argv[])
 	if ((o == '/' || o == '%') && argv2 == 0)
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	}
 
 	result = func(arg1, arg2);
 
 	printf("%d\n", result);
 
-	result (0);
+	result(0);
 }
