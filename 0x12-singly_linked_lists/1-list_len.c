@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * lists_len - function that returns an elemenmt
+ * list_len - function that returns an elemenmt
  * @h: Linked list_t list
  *
  * Return: the number of element in h
