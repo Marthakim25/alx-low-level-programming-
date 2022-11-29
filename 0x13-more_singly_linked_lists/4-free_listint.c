@@ -1,4 +1,4 @@
-#include "list.h"
+#include "lists.h"
 
 /**
  * free_listint2 - function that frees a listint_t list
@@ -6,7 +6,7 @@
  *
  * Return: NULL
  */
-void free_listint2(listint_t **head)
+void free_listint(listint_t *head)
 {
 	listint_t *tmp;
 

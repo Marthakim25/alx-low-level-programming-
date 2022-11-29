@@ -5,7 +5,7 @@
  * a listint_t linked list, and returns the head node’s data (n)
  * @head: the head of a list
  *
- * Return: 0
+ * Return: head of node's data
  */
 int pop_listint(listint_t **head)
 {
@@ -14,4 +14,17 @@ int pop_listint(listint_t **head)
 	listint_t *curr;
 
 	if (*head == NULL)
+		return (0);
 
+	curr = *head;
+
+	node = curr->n;
+
+	h = curr->next;
+
+	free(curr);
+
+	*head = h;
+
+	return (node);
+}
