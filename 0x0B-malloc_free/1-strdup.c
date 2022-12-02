@@ -14,7 +14,7 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 	k = 0;
-	while (str[k] = '\0')
+	while (str[k] != '\0')
 		k++;
 
 	aaa = malloc(sizeof(char) * (k + 1));
