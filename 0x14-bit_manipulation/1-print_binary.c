@@ -3,7 +3,7 @@
 /**
  * print_binary - function that prints the binary
  * representation of a number
- * @n: the number
+ * @n: unsigned long int
  *
  * Return: 0
  */
