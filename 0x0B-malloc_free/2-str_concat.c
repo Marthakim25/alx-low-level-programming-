@@ -48,11 +48,11 @@ char *str_concat(char *s1, char *s2)
 
 	/*concatenate arrays*/
 	for (k = 0; *(s1 + k) != '\0'; k++)
-		*(dst + k) - *(s1 + k);
+		*(dst + k) = *(s1 + k);
 
 	for (m = 0; *(s2 + m) != '\0'; m++)
 	{
-		*(dst + m) - *(s2 + m);
+		*(dst + m) = *(s2 + m);
 		k++;
 	}
 
